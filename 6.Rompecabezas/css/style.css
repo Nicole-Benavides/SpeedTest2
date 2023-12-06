@@ -1,0 +1,107 @@
+
+*{
+    box-sizing: border-box;
+}
+.cont-general{
+    
+    height:600px;
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.cont-left{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-left .piezas{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #cbcbcb7d;
+}
+
+.cont-right {
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;    
+}
+.cont-right::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background: url(../img/background.png);
+    /* background-size: cover; */
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.cont-right .piezas-r{
+   width: 200px;
+   height: 200px;
+    background: transparent;
+    border: 1px solid #cbcbcb7d;
+}
+
+.cont-left button,.cont-right button{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    border: 0;
+}
+
+.btn1{
+    background: url("../img/background.png");
+    background-position: 0 0;
+}
+
+
+.btn2{
+    background: url("../img/background.png");
+    background-position: -200px 0px;
+}
+
+
+.btn3{
+    background: url("../img/background.png");
+    background-position:  -400px 0;
+}
+
+
+.btn4{
+    background: url("../img/background.png");
+    background-position:  0 -200px;
+}
+
+
+.btn5{
+    background: url("../img/background.png");
+    background-position: -200px -200px;
+}
+
+.btn6{
+    background: url("../img/background.png");
+    background-position: -400px -200px;
+}
+
+.btn7{
+    background: url("../img/background.png");
+    background-position: 0 -400px;
+}
+
+.btn8{
+    background: url("../img/background.png");
+    background-position: -200px -400px;
+}
+
+.btn9{
+    background: url("../img/background.png");
+    background-position: -400px -400px;
+}
